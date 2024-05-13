@@ -1,0 +1,39 @@
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;800;900&display=swap" rel="stylesheet">
+<style>canvas{background:white;width:100vw;}body{background:gray;margin:0;}</style>
+<script src="https://cdn.jsdelivr.net/npm/@ruby/3.3-wasm-wasi@2.5.0/dist/browser.script.iife.js"></script>
+<script type="text/ruby">
+c=%q(require'js';L,G,R,Y,W,B='#d2f100','#80f142','#ff5450','#ffec00','#fff','#000';global=JS.global;doc=globa
+l[:document];cv=doc.createElement('canvas');doc[:body].appendChild(cv);ctx=cv.getContext('2d');ga=:globalAlph
+a;fs=:fillStyle;m=->{ctx.moveTo(*_1.rect)};l=->{ctx.lineTo(*_1.rect)};path=->p{ctx.beginPath;q=p.each_slice(2
+){q!=_1&&m[_1];l[q=_2]}};at=->x,y,r=0,&b{ctx.save;ctx.translate(x,y);ctx.rotate(r);b[];ctx.restore};circles=-
+>(*a){ctx.beginPath;2.times{(r=a[2*_1])&&m[r]&&ctx.arc(0,0,r,0,Math::PI*2,_1<1)};ctx[fs]=a[1];ctx.fill;ctx.st
+roke};minsa=->s{circles[190,W];circl                                     es[197.5,G,188-11*s];circles[166.5-3
+2*s,G,157-42*s];(110-s*60).times{|   i|a=1i.**i/b=(27.5-15*s);b=1i**(-~i   /b);ctx[fs]=B;3.times{|j|c,d=[166-
+32*s,174.1-25*s,180.4-18*s,189-1   1*s][j,2];~-i%5/3==(~i+j)%2*9&&(ctx.beg   inPath;m[c*a];l[c*b];l[d*b];l[d*
+a];ctx.closePath;ctx.fill)}}};   shikuwasa=->{circles[50,G,40];circles[40,L]   ;path[8.times.map{1i**(_1/2%4*
+0.5+_1%2*2)*40}];ctx.stroke}   ;goya=->{w=->i{c,s=1i.**(i*2/3.0).rect;(1i**(i/   30.0+c/90.0)*(48+5*s))};ctx.
+beginPath;m[(w[-1]+w[1])/2   ];40.times{|i|ctx.bezierCurveTo(*[w[3*i+1],_=w[3*i+   2],(_+w[3*i+4])/2].flat_ma
+p(&:rect))};ctx.closePat   h;m[37];ctx[fs]=G;ctx.arc(0,0,37,0,2*Math::PI,1);ctx.fi   ll;ctx.stroke;circles[37
+.5,L,27];};ruby=->{ctx   [fs]=R;rb=[-90-57i,-57i,:RubyKaigi.itself&&90-57i,-124,-52,   52,124,145i].map{_1-20
+i};path[rb.values_at   (0,2,2,6,6,7,7,3,3,0)];[ 2024,MAY15-17 ]if(!ctx.fill);ctx.close   Path;ctx.stroke;path
+.(rb.values_at(0,4,4   ,1,1,5,5,2,3,6,4,7,5,7));@naha,okinawa,=ctx.stroke,1;};codes=('   c=%q('+c+');eval(c.d
+elete(""<<10<<32))').s   plit$/;code=->(h){ctx[:textAlign]='center';rk=/R.{3}K.{4}|2   0.{9}17/;34.times{|y,l
+=codes[y]|ctx[:letterSpa   cing]="#{h/1e+3*y/l.size}px";ctx[fs]='#ccc';ctx[:font]=   f="#{s=h*0.8/34}px#{sp='
+'<<32}ui-monospace,Menlo,C   onsolas,monospace";ctx.fillText(l.gsub(rk){sp*_1.si   ze},0,y=h*((y+0.7)/34-0.5)
+);ctx[fs]=W;(msg=l[rk])&&(w1   =ctx.measureText(msg)[:width].to_f;f[sp]=sp+['D   ela','Gothic','One,']*sp;ctx
+[:font]=f;f[/.+px/]="#{s*w1/ct   x.measureText(msg)[:width].to_f}px";ctx[:fo   nt]=f;ctx.fillText(msg,0,y))}}
+;t0=Time.now;animate=->{w=(globa   l[:innerWidth].to_i*global[:devicePixel   Ratio].to_f).round;h=w*9/16;cv[k
+=:width].to_i!=w&&cv[k]=w;cv[k=:he   ight].to_i!=h&&cv[k]=h;ctx[:lineJoi   n]='round';ctx[lw=:lineWidth]=3;ct
+x.save;t=(Time.now-t0)%15;ctx.scale(   s=w/800.0,s);ctx.clearRect(0,0,   800,450);s=((t-7)/6.0).clamp(0,1);sc
+=1+600*1e80**(-(1-s)**2)+32*(1-1/(1+1e   4**(3*s-2)));ctx.translate(   400,z=403+90/(32+sc));ctx.scale(sc,sc)
+;ctx.translate(-400,-z);ctx.beginPath;w=   ->x{x+(600-1200*t/(1+2*   t)-9**[4*t-20,3].min+8*(Math.sin(0.011*x
+-3*t)+Math.sin(0.015*x+5*t))).i};m[(1+1i)*   800];l[800i];l[a=w[   -10]];27.times{ctx.bezierCurveTo(*(0.5.*a+
+a=w[30*_1+10]).rect,*(a=w[30*_1+20]).rect,*(   0.5.*a+a=w[30*_   1+40]).rect)};ctx[fs]=Y;ctx.fill;14.times{|i
+|v=1+Math.sin(34*i)*9%1;x=850+80*(i+Math.sin(9   8*i)*9%1*3)   -140*v*t;b=1+Math.sin(56*i)*9%1;-50<x&&x<850&&
+(y=400-t%b*(b-t%b)*200;rot=-v*(t-b);6560[i]>0?at   [x,y,ro   t]{circles[51,B];ctx.scale(s=0.254,s);ctx[lw]=5;
+minsa[1];ctx.rotate(-rot);ctx.scale(s=0.72,s);ctx[   lw]   =6;ruby[]}:at[x,y,rot,&[goya,shikuwasa][i%2]])};x=
+400+10.0*[13-t,0].max**2;at[x,y=220,(x-400)/190]{min     sa[0];ctx[ga]=a=((t-10)*0.4).clamp(0,1);a>0&&(at[0,1
+83.5]{code[5.7]};t<13&&(at[0,170.9]{code[5.7]};[-1,1]. map{at[10.1*_1,176.91,-0.057*_1]{code[5.7]}}))};at[x,y
+]{ctx[lw]=3.4;ruby[]};(0<a=4*(t-14.75))&&(ctx[ga]=a;ctx[fs]=W;ctx.fillRect(0,0,1024,1024));ctx.restore};!glob
+al.setInterval(animate,~-(url=%[https://rubykaigi.org/2024/])[/^[^.]+/].bytesize));eval(c.delete(""<<10<<32))
+</script>
